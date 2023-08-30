@@ -1,13 +1,13 @@
-const blueSky = false;
-const niceWeather = true;
-const wind = true;
+const isBlueSky = false;
+const isNiceWeather = true;
+const isWind = true;
 
-const validatePicnicWeather = (blueSky, niceWeather, wind) => {
-  if ((niceWeather && blueSky) || !wind) {
-    return "É um bom dia para piquinique";
+const validatePicnicWeather = (isBlueSky, isNiceWeather, isWind) => {
+  if (isNiceWeather && isBlueSky && !isWind) {
+    return "É um bom dia para piquenique";
   } else {
-    return "Não é um bom dia para piquinique";
+    return "Não é um bom dia para piquenique";
   }
 };
 
-console.log(validatePicnicWeather(blueSky, niceWeather, wind));
+console.log(validatePicnicWeather(isBlueSky, isNiceWeather, isWind));

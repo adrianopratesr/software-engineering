@@ -1,6 +1,6 @@
 const age = 16;
 
-const validateAgeVote = (age) => {
+const isEligibleToVote = (age) => {
   if (age >= 18) {
     return "Essa pessoaa é elegivel para votação";
   } else {
@@ -8,4 +8,4 @@ const validateAgeVote = (age) => {
   }
 };
 
-console.log(validateAgeVote(age));
+console.log(isEligibleToVote(age));

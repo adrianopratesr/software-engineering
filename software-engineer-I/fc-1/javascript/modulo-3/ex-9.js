@@ -1,9 +1,10 @@
 const points = 0;
 const bonus = 10;
 
-const totalGamePoints = (points, bonus) => {
+const calculateGamePoints = (points, bonus) => {
   points += bonus;
-  return (points -= 5);
+  points -= 5;
+  return points;
 };
 
-console.log(totalGamePoints(points, bonus));
+console.log(calculateGamePoints(points, bonus));

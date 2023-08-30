@@ -1,11 +1,11 @@
 const price = 100;
-const sale = 10;
+const discountRate = 10;
 const tax = 10;
 
-const calculateSaleAndTax = (price, sale, tax) => {
-  const valueSale = price * (sale / 100);
-  const valueTax = price * (tax / 100);
-  return price - valueSale + valueTax;
+const calculateDiscountAndTax = (price, discountRate, tax) => {
+  const discountValue = price * (discountRate / 100);
+  const taxValue = price * (tax / 100);
+  return (price - discountValue) + taxValue;
 };
 
-console.log(calculateSaleAndTax(price, sale, tax));
+console.log(calculateDiscountAndTax(price, discountRate, tax));
