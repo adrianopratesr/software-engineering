@@ -6,7 +6,7 @@ const calculateAreaRectangle = (length, width) => {
 };
 
 const calculatePerimeterRectangle = (length, width) => {
-  return `O perimetro do retangulo é ${length + length + width + width}`;
+  return `O perimetro do retangulo é ${2 * (length + width)}`;
 };
 
 console.log(

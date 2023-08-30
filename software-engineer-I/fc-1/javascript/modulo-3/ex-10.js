@@ -1,24 +1,24 @@
 const grade1 = 10;
 const grade2 = 10;
 const grade3 = 10;
-const burden1 = 1;
-const burden2 = 1;
-const burden3 = 1;
+const weight1 = 1;
+const weight2 = 1;
+const weight3 = 1;
 
 const calculateWeightedAverage = (
   grade1,
   grade2,
   grade3,
-  burden1,
-  burden2,
-  burden3
+  weight1,
+  weight2,
+  weight3
 ) => {
   const calculate =
-    (grade1 * burden1 + grade2 * burden2 + grade3 * burden3) /
-    (burden1 + burden2 + burden3);
+    (grade1 * weight1 + grade2 * weight2 + grade3 * weight3) /
+    (weight1 + weight2 + weight3);
   return calculate;
 };
 
 console.log(
-  calculateWeightedAverage(grade1, grade2, grade3, burden1, burden2, burden3)
+  calculateWeightedAverage(grade1, grade2, grade3, weight1, weight2, weight3)
 );
