@@ -1,3 +1,3 @@
+# O erro de sintaxe gerado foi devido a indentação após o if
 if True:
 print("Hello, world")
-# O erro de sitaxe gerado foi devido a indentação após o if

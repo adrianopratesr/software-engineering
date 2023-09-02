@@ -1,1 +1,1 @@
-GRAVIDADE = 9.8
+GRAVITY = 9.8

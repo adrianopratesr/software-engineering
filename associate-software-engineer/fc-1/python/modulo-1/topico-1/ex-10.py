@@ -1,2 +1,2 @@
-Nome = "João"
-print(Nome)
+name = "João"
+print(name)
