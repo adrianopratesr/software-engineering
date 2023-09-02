@@ -1,0 +1,1 @@
+GRAVIDADE = 9.8
