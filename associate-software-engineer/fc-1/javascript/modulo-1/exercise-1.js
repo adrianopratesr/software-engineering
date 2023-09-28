@@ -1,6 +1,6 @@
-pedroSales = 2;
-mariaSales = 0;
-carlosSales = 5;
+const pedroSales = 2;
+const mariaSales = 0;
+const carlosSales = 5;
 
 if (pedroSales > mariaSales && pedroSales > carlosSales) {
   return console.log("Pedro vendeu mais");

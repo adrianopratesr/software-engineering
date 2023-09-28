@@ -1,4 +1,4 @@
-temperature = 31;
+const temperature = 31;
 
 if (temperature <= 30) {
   return console.log("Use um casaco");
