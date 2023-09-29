@@ -1,6 +1,7 @@
 a = 10.5
 b = 2.25
 
-divisionValues = a / b
+division_values = a / b
 
-print(divisionValues)
+print(division_values)
+

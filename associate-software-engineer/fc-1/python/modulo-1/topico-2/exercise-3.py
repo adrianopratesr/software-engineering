@@ -1,6 +1,6 @@
-a = 10
-b = 5
+value_a = 10
+value_b = 5
 
-divisionValues = a / 5
+division_values = value_a / value_b
 
-print(divisionValues)
+print(division_values)

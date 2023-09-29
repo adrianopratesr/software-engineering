@@ -1,4 +1,4 @@
-a = True
-b = False
+value_a = True
+value_b = False
 
-print(a, b)
+print(value_a, value_b)

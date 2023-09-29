@@ -1,5 +1,5 @@
 from datetime import datetime
 
-a = datetime.now().strftime('%d de %B de %y')
+date_format = datetime.now().strftime('%d de %B de %y')
 
-print(a)
+print(date_format)

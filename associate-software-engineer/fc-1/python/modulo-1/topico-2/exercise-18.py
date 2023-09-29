@@ -1,4 +1,4 @@
-a = None
-b = "Adriano"
+value_a = None
+value_b = "Adriano"
 
-print(a, b)
+print(value_a, value_b)

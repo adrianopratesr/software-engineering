@@ -1,3 +1,3 @@
-a = len("Adriano")
+string_name = len("Adriano")
 
-print(a)
+print(string_name)

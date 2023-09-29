@@ -1,3 +1,4 @@
-a = 20.1
+value = 20.1
+value_convetion = int(value)
 
-print(int(a))
+print(value_convetion)

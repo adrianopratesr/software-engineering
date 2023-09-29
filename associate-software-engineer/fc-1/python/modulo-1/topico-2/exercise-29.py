@@ -1,5 +1,5 @@
 from datetime import datetime
 
-a = datetime.now().strftime('%d de %B de %y, the day of the week is: %A')
+date_format_and_week_days = datetime.now().strftime('%d de %B de %y, the day of the week is: %A')
 
-print(a)
+print(date_format_and_week_days)

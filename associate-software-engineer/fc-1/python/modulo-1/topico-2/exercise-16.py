@@ -1,3 +1,4 @@
-a = None
+value = None
+variable_type = type(value) 
 
-print(type(a))
+print(variable_type)

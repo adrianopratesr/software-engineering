@@ -1,3 +1,3 @@
-a = round(10.6)
+value = round(10.6)
 
-print(a)
+print(value)

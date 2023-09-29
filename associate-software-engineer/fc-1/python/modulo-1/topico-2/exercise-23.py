@@ -1,3 +1,4 @@
-a = True
+value = True
+value_convertion = int(value)
 
-print(int(a))
+print(value_convertion)

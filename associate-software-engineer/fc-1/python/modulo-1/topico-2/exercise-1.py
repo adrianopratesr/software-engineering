@@ -1,6 +1,6 @@
 a = 10
 b = 10
 
-sumValues = a + b
+sum_values = a + b
 
-print(sumValues)
+print(sum_values)

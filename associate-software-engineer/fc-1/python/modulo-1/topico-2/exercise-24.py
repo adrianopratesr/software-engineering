@@ -1,3 +1,4 @@
-a = 3
+value = 3
+value_convert = str(value)
 
-print(str(a))
+print(value_convert)

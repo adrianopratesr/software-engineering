@@ -1,6 +1,7 @@
-a = 10
-b = 10
+value_a = 10
+value_b = 10
 
-restValues = 10 % 10
+rest_values = value_a % value_b
 
-print(restValues)
+print(rest_values)
+

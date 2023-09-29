@@ -1,4 +1,4 @@
-a = "Adriano"
-a = None
+value = "Adriano"
+value = None
 
-print(a)
+print(value)
