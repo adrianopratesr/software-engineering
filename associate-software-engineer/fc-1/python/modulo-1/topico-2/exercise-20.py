@@ -1,4 +1,4 @@
 value = 13
-value_convetion = float(value)
+converted_value = float(value)
 
-print(value_convetion)
+print(converted_value)

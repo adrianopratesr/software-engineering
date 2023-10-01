@@ -1,4 +1,4 @@
-value_a = "AdrIaNo"
-string_upper_case = value_a.upper()
+name = "AdrIaNo"
+string_upper_case = name.upper()
 
 print(string_upper_case)

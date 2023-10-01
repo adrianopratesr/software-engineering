@@ -1,4 +1,4 @@
 name = "Adriano"
-find_character = name.find("a")
+position_character = name.find("a")
 
-print(find_character)
+print(position_character)

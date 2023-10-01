@@ -1,6 +1,6 @@
 a = "Adriano "
 b = "Prates"
 
-concatString = a + b
+concat_string = a + b
 
-print(concatString)
+print(concat_string)

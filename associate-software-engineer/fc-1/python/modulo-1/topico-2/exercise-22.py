@@ -1,4 +1,4 @@
 value = "1"
-value_convertion = int(value)
+converted_value = int(value)
 
-print(value_convertion)
+print(converted_value)

@@ -1,4 +1,4 @@
 value = 20.1
-value_convetion = int(value)
+converted_value = int(value)
 
-print(value_convetion)
+print(converted_value)

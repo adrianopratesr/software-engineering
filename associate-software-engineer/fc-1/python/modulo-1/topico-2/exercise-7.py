@@ -1,7 +1,7 @@
 a = 10.5
 b = 2.25
 
-division_values = a / b
+result_division = a / b
 
-print(division_values)
+print(result_division)
 

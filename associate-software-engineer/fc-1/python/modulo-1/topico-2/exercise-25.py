@@ -1,4 +1,4 @@
 from datetime import datetime
-date_format = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+formatted_date = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
 
-print(date_format)
+print(formatted_date)

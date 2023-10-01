@@ -1,6 +1,6 @@
 a = 10
 b = 10
 
-multiplication_values = a * b
+multiplication_result = a * b
 
-print(multiplication_values)
+print(multiplication_result)

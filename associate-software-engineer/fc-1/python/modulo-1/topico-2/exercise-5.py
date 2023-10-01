@@ -1,6 +1,6 @@
 a = 10
 b = 2
 
-exponential_values = a ** b
+exponential_result = a ** b
 
-print(exponential_values)
+print(exponential_result)

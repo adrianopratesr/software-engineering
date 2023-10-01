@@ -1,3 +1,4 @@
-string_name = len("Adriano")
+name = "Adriano"
+name_length = len(name)
 
-print(string_name)
+print(name_length)

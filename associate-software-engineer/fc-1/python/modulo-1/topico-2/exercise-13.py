@@ -1,3 +1,3 @@
-value_a = "Adriano"
+name = "Adriano"
 
-print(value_a[:3])
+print(name[:3])
