@@ -17,4 +17,6 @@ switch (gradeStudent) {
   case 10:
     console.log("Este aluno foi aprovado");
     break;
+  default:
+    console.log("Não está dentro do escopo");
 }
