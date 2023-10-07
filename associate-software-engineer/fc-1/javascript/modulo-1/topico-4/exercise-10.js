@@ -1,5 +1,5 @@
-const confirm_user = true;
+const confirmUser = true;
 
 do {
   console.log("Você tem certeza da sua escolha?");
-} while (confirm_user === false);
+} while (confirmUser === false);
