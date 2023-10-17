@@ -1,4 +1,4 @@
-const array = [
+const aleatory = [
   "oi",
   "tchau",
   "mau",
@@ -11,4 +11,4 @@ const array = [
   4,
 ];
 
-console.log(array.slice(3, 6));
+console.log(aleatory.slice(3, 6));

@@ -1,5 +1,5 @@
-const array = ["oi", "tchau", "mau", "cão", "lata"];
+const aleatory = ["oi", "tchau", "mau", "cão", "lata"];
 
-array.push("Luana", "Adriano");
+aleatory.push("Luana", "Adriano");
 
-console.log(array);
+console.log(aleatory);

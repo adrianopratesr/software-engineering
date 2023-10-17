@@ -1,3 +1,3 @@
-const array = ["oi", "tchau", "mau", "cão", "lata"];
+const aleatory = ["oi", "tchau", "mau", "cão", "lata"];
 
-console.log(array[2]);
+console.log(aleatory[2]);
