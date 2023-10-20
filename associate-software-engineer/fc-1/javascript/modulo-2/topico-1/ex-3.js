@@ -1,6 +1,6 @@
-const aleatory = ["oi", "tchau", "mau", "cão", "lata"];
+const objects = ["oi", "tchau", "mau", "cão", "lata"];
 
-aleatory.pop();
-aleatory.shift();
+objects.pop();
+objects.shift();
 
-console.log(aleatory);
+console.log(objects);

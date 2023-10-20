@@ -1,5 +1,5 @@
-const aleatory = ["oi", "tchau", "mau", "cão", "lata"];
+const objects = ["oi", "tchau", "mau", "cão", "lata"];
 
-aleatory.push("Luana", "Adriano");
+objects.push("Luana", "Adriano");
 
-console.log(aleatory);
+console.log(objects);

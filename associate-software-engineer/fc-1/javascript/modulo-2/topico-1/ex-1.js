@@ -1,3 +1,3 @@
-const aleatory = ["oi", "tchau", "mau", "cão", "lata"];
+const objects = ["oi", "tchau", "mau", "cão", "lata"];
 
-console.log(aleatory[2]);
+console.log(objects[2]);
