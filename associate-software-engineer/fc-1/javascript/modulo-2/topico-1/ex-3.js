@@ -1,6 +1,6 @@
-const array = ["oi", "tchau", "mau", "cão", "lata"];
+const aleatory = ["oi", "tchau", "mau", "cão", "lata"];
 
-array.pop();
-array.shift();
+aleatory.pop();
+aleatory.shift();
 
-console.log(array);
+console.log(aleatory);
