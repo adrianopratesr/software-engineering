@@ -1,7 +1,7 @@
 const values = [1, 2, 3, 4, 5];
 
-const sum_values = values.reduce((value, position) => {
+const sumValues = values.reduce((value, position) => {
   return value + position;
 });
 
-console.log(sum_values);
+console.log(sumValues);

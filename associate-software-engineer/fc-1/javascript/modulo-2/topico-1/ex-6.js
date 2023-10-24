@@ -1,7 +1,7 @@
-const multi_elements = [
+const multiElements = [
   ["oi", "tchau"],
   ["Luana", "Adriano"],
   ["sol", "bruce"],
 ];
 
-console.log(multi_elements[0][1]);
+console.log(multiElements[0][1]);

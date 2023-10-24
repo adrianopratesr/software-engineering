@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
-const age_equal = students.find((equal) => {
+const ageEqual = students.find((equal) => {
   return equal.age === 20;
 });
 
-console.log(age_equal);
+console.log(ageEqual);
