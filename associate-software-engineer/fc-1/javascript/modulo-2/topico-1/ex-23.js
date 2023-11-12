@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
-const verifyAge = students.some((ages) => {
-  return ages.age > 22;
+const studentsWith22 = students.some((student) => {
+  return student.age === 22;
 });
 
-console.log(verifyAge);
+console.log(studentsWith22);

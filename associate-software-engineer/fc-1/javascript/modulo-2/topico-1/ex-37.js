@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
 const sumAges = students.reduce(
-  (previousAge, currentAge) => previousAge + currentAge.age,
+  (accumulatedAge, currentAge) => accumulatedAge + currentAge.age,
   0
 );
 

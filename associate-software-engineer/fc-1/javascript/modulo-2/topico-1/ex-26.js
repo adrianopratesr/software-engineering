@@ -1,6 +1,7 @@
 import { students } from "./mock.js";
 
-const alphabeticalOrder = students.sort((a, b) => {
-  return a.name.localeCompare(b.name);
+const studentsWithFirstCharA = students.filter((student) => {
+  return student.name[0] === "A";
 });
-console.log(alphabeticalOrder);
+
+console.log(studentsWithFirstCharA);

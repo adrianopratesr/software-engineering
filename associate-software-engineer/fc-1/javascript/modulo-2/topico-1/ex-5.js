@@ -1,3 +1,7 @@
-const fruits = ["abacaxi", "pera", "lima", "morango"];
+const multiElements = [
+  ["oi", "tchau"],
+  ["Luana", "Adriano"],
+  ["sol", "bruce"],
+];
 
-fruits.forEach((fruit) => console.log(fruit));
+console.log(multiElements[0][1]);

@@ -1,7 +1,7 @@
 const salutations = ["Olá", " ", "mundo", "!"];
 
-const salutationReduce = salutations.reduce((salutation, position) => {
-  return salutation + position;
-});
+const salutation = salutations.reduce((salutation, item) => {
+  return salutation + item;
+}, "");
 
-console.log(salutationReduce);
+console.log(salutation);

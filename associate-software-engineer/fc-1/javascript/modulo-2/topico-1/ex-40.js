@@ -8,7 +8,7 @@ const events = [...Array(50)].map((_, i) => ({
   date: new Date(2022 + i, 1, 1),
 }));
 
-const ohMyGod = people.map((person) => {
+const eventClosestToThePersonDateOfBirth = people.map((person) => {
   const filterEvents = events.filter(
     (value) => value.date > person.dateOfBirth
   );
@@ -18,4 +18,4 @@ const ohMyGod = people.map((person) => {
   return `Nome: ${person.name}, Data de nascimento: ${person.dateOfBirth}, Nome do evento: ${nextEvent.name}, Data do evento: ${nextEvent.date}`;
 });
 
-console.log(ohMyGod);
+console.log(eventClosestToThePersonDateOfBirth);

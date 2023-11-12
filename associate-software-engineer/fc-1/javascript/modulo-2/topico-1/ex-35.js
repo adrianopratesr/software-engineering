@@ -1,6 +1,6 @@
 import { students } from "./mock.js";
 
-const alphabeticalOrder = students
+const studentsOrdered = students
   .sort((a, b) => {
     if (a.name === b.name) {
       return a.age - b.age;
@@ -9,4 +9,4 @@ const alphabeticalOrder = students
   })
   .map((student) => `nome: ${student.name}, idade: ${student.age}`);
 
-console.log(alphabeticalOrder);
+console.log(studentsOrdered);

@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
-const verifyAge = students.every((ages) => {
+const studentsWith19 = students.every((ages) => {
   return ages.age > 19;
 });
 
-console.log(verifyAge);
+console.log(studentsWith19);

@@ -1,11 +1,10 @@
 import { students } from "./mock.js";
 
-const findStudentAge = students.filter((student) => {
+const studentsMoreThan20 = students.filter((student) => {
   return student.age > 20;
 });
 
-const minorAge = findStudentAge.reduce((a, b) => {
-  return Math.min(a, b.age);
-}, Infinity);
-
-console.log(minorAge);
+const youngestStudent = studentsMoreThan20.reduce((youngest, student) => {
+  return youngest.age < student.age ? youngest : student;
+});
+console.log(youngestStudent);

@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
-const listNames = students.map((student) => {
+const studentsNames = students.map((student) => {
   return student.name;
 });
 
-console.log(listNames);
+console.log(studentsNames);

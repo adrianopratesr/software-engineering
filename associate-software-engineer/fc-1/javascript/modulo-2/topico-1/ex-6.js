@@ -1,7 +1,7 @@
-const multiElements = [
-  ["oi", "tchau"],
-  ["Luana", "Adriano"],
-  ["sol", "bruce"],
-];
+const numbers = [1, 2, 3, 4];
 
-console.log(multiElements[0][1]);
+const doubledNumbers = numbers.map((number) => {
+  return number * 2;
+});
+
+console.log(doubledNumbers);

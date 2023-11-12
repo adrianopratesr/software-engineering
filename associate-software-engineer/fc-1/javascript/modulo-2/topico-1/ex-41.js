@@ -3,10 +3,10 @@ const events = [...Array(50)].map((_, i) => ({
   date: new Date(2022 + i, 1, 1),
 }));
 
-const filterEvents = events.filter((value) => {
+const filteredEvents = events.filter((value) => {
   return (
     value.date >= new Date("2030-01-01") && value.date <= new Date("2040-01-01")
   );
 });
 
-console.log(filterEvents);
+console.log(filteredEvents);
