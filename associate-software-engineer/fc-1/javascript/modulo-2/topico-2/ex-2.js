@@ -4,3 +4,7 @@ let book = {
   year: 1919,
 };
 console.log(book);
+
+book.publishingCompany = "bookman";
+
+console.log(book);
