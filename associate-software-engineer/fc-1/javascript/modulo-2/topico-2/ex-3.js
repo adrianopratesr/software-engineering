@@ -3,8 +3,9 @@ let book = {
   author: "Andrew Hunt",
   year: 1999,
 };
+
 console.log(book);
 
-book.publishingCompany = "bookman";
+book.year = 2010;
 
 console.log(book);
