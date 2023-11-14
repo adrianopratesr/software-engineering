@@ -5,3 +5,7 @@ let book = {
 };
 
 console.log(book);
+
+delete book.author;
+
+console.log(book);
