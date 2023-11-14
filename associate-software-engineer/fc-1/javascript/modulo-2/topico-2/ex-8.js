@@ -1,4 +1,4 @@
-let car = [
+let cars = [
   {
     brand: "BMW",
     model: "M2",
@@ -16,10 +16,10 @@ let car = [
   },
 ];
 
-console.log(car);
+console.log(cars);
 
-const carOfTheYear2020 = car.filter((car) => {
+const carsOfTheYear2020 = cars.filter((car) => {
   return car.year === 2020;
 });
 
-console.log(carOfTheYear2020);
+console.log(carsOfTheYear2020);

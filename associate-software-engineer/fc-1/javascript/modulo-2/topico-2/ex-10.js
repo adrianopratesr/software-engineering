@@ -2,7 +2,7 @@ let cars = [
   {
     brand: "BMW",
     model: "M2",
-    year: 2024,
+    year: 2020,
   },
   {
     brand: "mercedes",
@@ -15,5 +15,9 @@ let cars = [
     year: 2024,
   },
 ];
+
+console.log(cars);
+
+cars[2].model = "ct5";
 
 console.log(cars);
