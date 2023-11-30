@@ -1,4 +1,4 @@
-let cars = new Map();
+const cars = new Map();
 
 cars.set("Brand", "BMW");
 cars.set("Brand", "Aston Martin");

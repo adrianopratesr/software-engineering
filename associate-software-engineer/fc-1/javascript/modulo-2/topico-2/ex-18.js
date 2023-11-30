@@ -1,11 +1,11 @@
-const produtos = [
+const products = [
   { id: "p1", nome: "Caneta", preco: 1.5 },
   { id: "p2", nome: "Lápis", preco: 0.8 },
 ];
 
 const convertInMap = new Map();
 
-produtos.forEach((id, nome) => {
+products.forEach((id, nome) => {
   convertInMap.set(id, nome);
 });
 

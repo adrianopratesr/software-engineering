@@ -1,13 +1,13 @@
-const palavras = ["gato", "cachorro", "gato", "pássaro"];
+const words = ["gato", "cachorro", "gato", "pássaro"];
 
-let mapaPalavras = new Map();
+const mapWords = new Map();
 
-palavras.forEach((chave) => {
-  if (mapaPalavras.has(chave)) {
-    mapaPalavras.set(chave, mapaPalavras.get(chave) + 1);
+words.forEach((chave) => {
+  if (mapWords.has(chave)) {
+    mapWords.set(chave, mapWords.get(chave) + 1);
   } else {
-    mapaPalavras.set(chave, 1);
+    mapWords.set(chave, 1);
   }
 });
 
-console.log(mapaPalavras);
+console.log(mapWords);

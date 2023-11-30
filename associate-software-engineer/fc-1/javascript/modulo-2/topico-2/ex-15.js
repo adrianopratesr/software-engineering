@@ -1,8 +1,8 @@
-const mapa = new Map([
+const map = new Map([
   ["chave1", "valor1"],
   ["chave2", "valor2"],
 ]);
 
-mapa.forEach((valor, chave) => {
+map.forEach((valor, chave) => {
   console.log(chave, valor);
 });

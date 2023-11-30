@@ -1,6 +1,6 @@
-const mapa = new Map([
+const map = new Map([
   ["chave1", "valor1"],
   ["chave2", "valor2"],
 ]);
 
-console.log(mapa.has("chave2"));
+console.log(map.has("chave2"));

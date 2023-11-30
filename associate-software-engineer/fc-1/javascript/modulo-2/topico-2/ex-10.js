@@ -1,4 +1,4 @@
-let cars = [
+const cars = [
   {
     brand: "BMW",
     model: "M2",

@@ -1,8 +1,8 @@
-const mapa = new Map([
+const map = new Map([
   ["chave1", "valor1"],
   ["chave2", "valor2"],
 ]);
 
-mapa.delete("chave1");
+map.delete("chave1");
 
-console.log(mapa);
+console.log(map);

@@ -1,4 +1,4 @@
-let car = {
+const car = {
   brand: "BMW",
   model: "M2",
   year: 2024,

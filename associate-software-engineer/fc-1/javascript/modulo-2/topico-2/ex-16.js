@@ -1,8 +1,8 @@
-const mapaOriginal = new Map([
+const oldMap = new Map([
   ["chave1", "valor1"],
   ["chave2", "valor2"],
 ]);
 
-let mapaNovo = new Map(mapaOriginal);
+const newMap = new Map(oldMap);
 
-console.log(mapaNovo);
+console.log(newMap);

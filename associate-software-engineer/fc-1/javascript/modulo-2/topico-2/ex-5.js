@@ -1,4 +1,4 @@
-let book = {
+const book = {
   title: "O programador pragmatico",
   author: "Andrew Hunt",
   year: 1999,
