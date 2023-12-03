@@ -3,6 +3,6 @@ const map = new Map([
   ["chave2", "valor2"],
 ]);
 
-map.forEach((valor, chave) => {
-  console.log(chave, valor);
+map.forEach((value, key) => {
+  console.log(key, value);
 });

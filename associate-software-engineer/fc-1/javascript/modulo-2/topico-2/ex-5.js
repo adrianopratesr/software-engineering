@@ -6,6 +6,6 @@ const book = {
 
 console.log(book);
 
-for (let properties in book) {
+for (const properties in book) {
   console.log(`${properties} -> ${book[properties]}`);
 }

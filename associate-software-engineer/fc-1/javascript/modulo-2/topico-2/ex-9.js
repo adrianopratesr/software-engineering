@@ -18,11 +18,8 @@ const cars = [
 
 console.log(cars);
 
-const newProperty = cars.map((car) => {
-  return {
-    ...car,
-    available: true,
-  };
+cars.forEach((car) => {
+  car.available = true;
 });
 
-console.log(newProperty);
+console.log(cars);

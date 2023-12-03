@@ -3,10 +3,10 @@ const products = [
   { id: "p2", nome: "Lápis", preco: 0.8 },
 ];
 
-const convertInMap = new Map();
+const newMap = new Map();
 
 products.forEach((id, nome) => {
-  convertInMap.set(id, nome);
+  newMap.set(id, nome);
 });
 
-console.log(convertInMap);
+console.log(newMap);
