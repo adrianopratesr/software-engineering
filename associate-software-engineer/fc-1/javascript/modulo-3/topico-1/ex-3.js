@@ -1,6 +1,6 @@
-const sumSimple = function (numberA, numberB) {
+function sumSimple(numberA, numberB) {
   return numberA + numberB;
-};
+}
 
 const sumArrow = (numberA, numberB) => numberA + numberB;
 
