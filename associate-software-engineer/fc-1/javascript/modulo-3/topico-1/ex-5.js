@@ -1,5 +1,5 @@
-const printResult = (numberA, numberB) => addNumbers(numberA, numberB);
+const printResult = (addNumbers) => addNumbers;
 
 const addNumbers = (numberA, numberB) => numberA + numberB;
 
-console.log(printResult(2, 3));
+console.log(printResult(addNumbers(2, 3)));
