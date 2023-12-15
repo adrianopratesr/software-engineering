@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
-function alphabeticalOrder() {
+function alphabeticalOrder(students) {
   return students.sort(students.name);
 }
 
-console.log(alphabeticalOrder());
+console.log(alphabeticalOrder(students));
