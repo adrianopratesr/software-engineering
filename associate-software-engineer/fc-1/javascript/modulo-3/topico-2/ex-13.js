@@ -1,10 +1,10 @@
 import { students } from "./mock.js";
 
-function youngestStudent() {
+function youngestStudent(students) {
   return students.reduce(
     (youngest, student) => (youngest.age < student.age ? youngest : student),
-    0
+    {}
   );
 }
 
-console.log(youngestStudent());
+console.log(youngestStudent(students));
