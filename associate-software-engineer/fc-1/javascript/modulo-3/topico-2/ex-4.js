@@ -4,10 +4,10 @@ const address = {
   number: 100,
 };
 
-const printddress = (object) => {
-  for (const a in object) {
-    console.log(`${a} => ${object[a]}`);
+const printAddress = (object) => {
+  for (const prop in object) {
+    console.log(`${prop} => ${object[prop]}`);
   }
 };
 
-printddress(address);
+printAddress(address);
