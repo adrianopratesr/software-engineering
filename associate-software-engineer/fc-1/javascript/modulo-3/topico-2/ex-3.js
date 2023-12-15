@@ -1,7 +1,7 @@
-const higherNumber = (numbers) => {
-  return numbers.reduce((numberA, numberB) => {
-    return numberA > numberB ? numberA : numberB;
-  });
+const max = (...numbers) => {
+  return Math.max(...numbers);
 };
 
-console.log(higherNumber([2, 3, 1000]));
+const currentNumbers = [1, 2, 3, 4];
+
+console.log(max(...currentNumbers));
