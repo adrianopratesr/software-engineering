@@ -1,8 +1,2 @@
-const createProfile = (name, age, gender) =>
-  console.log({
-    name,
-    age,
-    gender,
-  });
-
-createProfile("Luana", 27, "Mulher");
+const createProfile = (name, age, gender) => ({ name, age, gender });
+console.log(createProfile("Luana", 27, "Mulher"));
