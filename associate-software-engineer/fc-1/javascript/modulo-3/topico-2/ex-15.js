@@ -1,6 +1,6 @@
 import { students } from "./mock.js";
 
-const convertData = () => {
+const convertData = (students) => {
   const currentDate = new Date();
   const ages = students.map((student) => {
     const millisecondsDifference =
@@ -13,4 +13,4 @@ const convertData = () => {
   return ages;
 };
 
-console.log(convertData());
+console.log(convertData(students));

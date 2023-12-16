@@ -1,6 +1,6 @@
 const adrianoGrade = 10;
 
 const checkApproval = (grade) =>
-  grade <= 5 ? console.log("Aluno reprvado") : console.log("Aluno aprovado");
+  grade <= 5 ? "Aluno reprvado" : "Aluno aprovado";
 
-checkApproval(adrianoGrade);
+console.log(checkApproval(adrianoGrade));
