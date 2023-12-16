@@ -1,9 +1,8 @@
 import { students } from "./mock.js";
 
-const adicionandoestudante = (students, novoestudante) =>
-  students.push(novoestudante);
+const addStudent = (students, newStudent) => students.push(newStudent);
 
-adicionandoestudante(students, {
+addStudent(students, {
   name: "Antonio",
   age: 31,
   dateOfBirth: "1992-05-18",
