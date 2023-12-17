@@ -10,8 +10,9 @@ const convertDate = (student) => {
 
 const findStudent = (student, findMonth) => {
   const convert = convertDate(student);
+  const numberOfTheMonth = getMonthNumber(findMonth);
   const filteredStudents = student.filter((_, index) => {
-    return convert[index] === findMonth;
+    return convert[index] === numberOfTheMonth;
   });
   if (filteredStudents.length === 0) {
     return `Ninguém faz aniversário no mês ${findMonth}`;
@@ -20,4 +21,22 @@ const findStudent = (student, findMonth) => {
   return filteredStudents;
 };
 
-console.log(findStudent(students, 3));
+function getMonthNumber(monthName) {
+  const monthNames = [
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+  ];
+  return monthNames.indexOf(monthName) + 1;
+}
+
+console.log(findStudent(students, "Junho"));

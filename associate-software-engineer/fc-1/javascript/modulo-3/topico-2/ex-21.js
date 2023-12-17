@@ -1,8 +1,11 @@
 import { students } from "./mock.js";
 
 const convertDate = (students) => {
-  const maipulatingData = students.map((date) => new Date(date.dateOfBirth));
-  return maipulatingData;
+  return new Date(students.dateOfBirth);
 };
 
-console.log(convertDate(students));
+const datesOfBirth = students.map((date) => {
+  return convertDate(date);
+});
+
+console.log(datesOfBirth);

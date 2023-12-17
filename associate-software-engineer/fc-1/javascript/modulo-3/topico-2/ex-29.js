@@ -5,17 +5,17 @@ const differencesBetweenAges = (student1, student2) => {
   const dateOfBirthStudent2 = new Date(student2.dateOfBirth);
   if (student1.age > student2.age) {
     const diference = dateOfBirthStudent2 - dateOfBirthStudent1;
-    return `A diferença de dias entre o(a) estudente ${
-      student1.name
-    } e o(a) estudente ${student2.name} é igual a ${convertingMillisecondInDays(
-      diference
-    )} dias`;
+    return printMessage(student1, student2, diference);
   }
   const diference2 = dateOfBirthStudent1 - dateOfBirthStudent2;
+  return printMessage(student1, student2, diference2);
+};
+
+const printMessage = (student1, student2, diference) => {
   return `A diferença de dias entre o(a) estudente ${
     student1.name
   } e o(a) estudente ${student2.name} é igual a ${convertingMillisecondInDays(
-    diference2
+    diference
   )} dias`;
 };
 
