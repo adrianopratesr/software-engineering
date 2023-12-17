@@ -12,7 +12,7 @@ export const students = [
   {
     name: "Ricardo",
     age: 62,
-    dateOfBirth: "1961-04-04",
+    dateOfBirth: "1961-05-04",
   },
   {
     name: "Cristina",
