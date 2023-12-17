@@ -1,6 +1,6 @@
 import { students } from "./mock.js";
 
-const removeStudentByName = (name) => {
+const removeStudentByName = (students, name) => {
   const positionStudent = students.findIndex(
     (student) => student.name === name
   );

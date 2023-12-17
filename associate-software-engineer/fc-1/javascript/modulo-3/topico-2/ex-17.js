@@ -1,7 +1,7 @@
 import { students } from "./mock.js";
 
-const findStudentsByName = (name) => {
+const findStudentsByName = (students, name) => {
   return students.filter((student) => name == student.name);
 };
 
-console.log(findStudentsByName("Ana Clara"));
+console.log(findStudentsByName(students, "Ana Clara"));
