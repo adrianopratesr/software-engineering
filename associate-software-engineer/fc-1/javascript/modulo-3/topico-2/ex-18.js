@@ -9,7 +9,7 @@ const birthdaysOfTheMonth = (students, bithdayMonth) => {
 
 const checkMonthOfBirthday = (date, bithdayMonth) => {
   const dateOfBirth = new Date(date);
-  const month = dateOfBirth.getMonth() + 1;
+  const month = dateOfBirth.getMonth();
   return month === bithdayMonth;
 };
 
@@ -28,7 +28,7 @@ function getMonthNumber(monthName) {
     "Novembro",
     "Dezembro",
   ];
-  return monthNames.indexOf(monthName) + 1;
+  return monthNames.indexOf(monthName);
 }
 
-console.log(birthdaysOfTheMonth(students, "Maio"));
+console.log(birthdaysOfTheMonth(students, "Julho"));

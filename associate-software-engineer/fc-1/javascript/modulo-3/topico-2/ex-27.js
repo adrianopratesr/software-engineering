@@ -15,7 +15,7 @@ const findStudent = (student, findMonth) => {
     return convert[index] === numberOfTheMonth;
   });
   if (filteredStudents.length === 0) {
-    return `Ninguém faz aniversário no mês ${findMonth}`;
+    return `Ninguém faz aniversário no mês de ${findMonth}`;
   }
 
   return filteredStudents;
