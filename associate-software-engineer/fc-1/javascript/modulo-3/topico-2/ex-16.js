@@ -1,6 +1,9 @@
 import { students } from "./mock.js";
 
 const rangeAgeStudents = (age) => {
+  if (age < 0) {
+    return "Não aceitamos idades negativas";
+  }
   if (age > 0 && age <= 18) {
     return "0-18";
   } else if (age > 18 && age <= 60) {

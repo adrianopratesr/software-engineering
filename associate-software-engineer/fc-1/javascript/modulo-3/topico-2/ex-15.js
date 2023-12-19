@@ -1,19 +1,14 @@
 import { students } from "./mock.js";
 
-const convert = (students) => {
-  const ages = students.map((student) => {
-    return differenceDate(student);
-  });
-  return ages;
-};
-
-const differenceDate = (student) => {
+const differenceDate = (date) => {
   const currentDate = new Date();
-  const millisecondsDifference = currentDate - Date.parse(student.dateOfBirth);
-  const ageInYears = Math.floor(
-    millisecondsDifference / 1000 / 60 / 60 / 24 / 365
-  );
-  return ageInYears;
+  const millisecondsDifference = currentDate - Date.parse(date);
+  const ageInYears = millisecondsDifference / 1000 / 60 / 60 / 24 / 365;
+  return Math.round(ageInYears);
 };
 
-console.log(convert(students));
+students.forEach((student) => {
+  student.age = differenceDate(student.dateOfBirth);
+});
+
+console.log(students);
