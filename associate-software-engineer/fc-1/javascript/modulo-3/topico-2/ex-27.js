@@ -1,24 +1,17 @@
 import { students } from "./mock.js";
 
-const convertDate = (student) => {
-  return student.map((date) => {
-    const data = new Date(date.dateOfBirth);
-    const month = data.getMonth() + 1;
-    return month;
-  });
-};
+const isMonthTheSame = (date, monthNumber) => {
 
-const findStudent = (student, findMonth) => {
-  const convert = convertDate(student);
-  const numberOfTheMonth = getMonthNumber(findMonth);
-  const filteredStudents = student.filter((_, index) => {
-    return convert[index] === numberOfTheMonth;
-  });
-  if (filteredStudents.length === 0) {
-    return `Ninguém faz aniversário no mês de ${findMonth}`;
-  }
+  return new Date(date).getMonth() === monthNumber;
+  };
 
-  return filteredStudents;
+
+const filterStudentsBornByMonth = (students, monthName) => {
+  const numberOfTheMonth = getMonthNumber(monthName);
+  return students.filter((student) => 
+    isMonthTheSame(student.dateOfBirth, numberOfTheMonth)
+  );
+
 };
 
 function getMonthNumber(monthName) {
@@ -36,7 +29,7 @@ function getMonthNumber(monthName) {
     "Novembro",
     "Dezembro",
   ];
-  return monthNames.indexOf(monthName) + 1;
+  return monthNames.indexOf(monthName) ;
 }
 
-console.log(findStudent(students, "Junho"));
+console.log(filterStudentsBornByMonth(students, "Maio"));

@@ -7,10 +7,6 @@ const filteringStudentAges = (students, initialAge, endAge) => {
     }
   });
 
-  if (ages.length === 0) {
-    return `Não existem estudantes entre as idades ${initialAge} e ${endAge}`;
-  }
-
   return ages;
 };
 
