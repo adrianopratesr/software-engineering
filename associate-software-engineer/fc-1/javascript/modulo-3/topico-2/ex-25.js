@@ -20,7 +20,7 @@ const nextBirth = (dateOfBirth) => {
 };
 
 students.forEach((student) => {
-  student.daysToBirth = nextBirth(student.dateOfBirth);
+  student.dateOfBirth = nextBirth(student.dateOfBirth);
 });
 
 console.log(students);
