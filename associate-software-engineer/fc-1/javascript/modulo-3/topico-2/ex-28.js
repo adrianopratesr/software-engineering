@@ -1,18 +1,15 @@
 import { students } from "./mock.js";
+import { isMonthTheSame } from "./utils.date.js";
 
-const isMonthTheSame = (date, monthNumber) => {
-
-  return new Date(date).getMonth() === monthNumber;
-  };
 
 
 const filterStudentsBornByMonth = (students, monthName) => {
   const numberOfTheMonth = getMonthNumber(monthName);
-  const filterStudentsMettingMonthBirth = students.filter((student) => 
+  const studentsBornedInSpecificMonth = students.filter((student) => 
     isMonthTheSame(student.dateOfBirth, numberOfTheMonth))
-  const sumAges = filterStudentsMettingMonthBirth.reduce((acumulador, student) => acumulador +
+  const sumAges = studentsBornedInSpecificMonth.reduce((acumulador, student) => acumulador +
   student.age, 0)
-  return Math.floor(sumAges / filterStudentsMettingMonthBirth.length);
+  return Math.floor(sumAges / studentsBornedInSpecificMonth.length);
 };
 
 function getMonthNumber(monthName) {
