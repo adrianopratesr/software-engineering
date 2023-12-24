@@ -1,4 +1,4 @@
-const students = {
+const consumption = {
   students: [
     { id: 1001, dataNascimento: "2005-03-02" },
     { id: 1002, dataNascimento: "2003-07-15" },
@@ -6,7 +6,7 @@ const students = {
     { id: 1004, dataNascimento: "2006-01-04" },
     { id: 1005, dataNascimento: "2002-05-09" },
   ],
-  acquisition: [
+  purchases: [
     {
       idEstudante: 1001,
       categoria: "Tecnologia",
@@ -70,15 +70,43 @@ const students = {
   ],
 };
 
-const calculateAge = (students) => {
+
+const differenceDate = (date) => {
   const currentDate = new Date();
-  const millisecondsDifference = students.map(
-    (student) => currentDate - Date.parse(student.dataNascimento)
-  );
-  const ageInYears = Math.floor(
-    millisecondsDifference / 1000 / 60 / 60 / 24 / 365
-  );
-  return ageInYears;
+  const millisecondsDifference = currentDate - Date.parse(date);
+  const ageInYears = millisecondsDifference / 1000 / 60 / 60 / 24 / 365;
+  return Math.round(ageInYears);
 };
 
-console.log(calculateAge(students));
+const rangeAgeStudents = (age) => {
+  if (age < 0) {
+    return "Não aceitamos idades negativas";
+  }
+  if (age > 0 && age <= 18) {
+    return "0-18";
+  } else if (age > 19 && age <= 20) {
+    return "19-20";
+  } else if(age > 20 && age <= 22){
+    return "21-22";
+  }else {
+    return "+22"
+  }
+};
+
+const filterConsumption = (studentId, purchases) =>{
+  return purchases.filter((purchase) => purchase.idEstudante === studentId);
+};
+
+
+const groupByStudents = (students, purchases) => {
+  let group = {"0-18": [], "19-20": [], "21-22": [], "+22": []};
+  students.forEach((student) => {
+    const age = differenceDate(student.dataNascimento);
+    const correlacionando = filterConsumption(student.id, purchases);
+    const range = rangeAgeStudents(age);
+    group[range].push(...correlacionando);
+  })
+    return group;
+};
+
+console.log(groupByStudents(consumption.students, consumption.purchases));
