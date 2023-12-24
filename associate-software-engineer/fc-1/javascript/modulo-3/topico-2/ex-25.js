@@ -1,8 +1,6 @@
 import { students } from "./mock.js";
+import { convertingMilliSecondInDays } from "./utils.date.js";
 
-const convertingMilliSecondInDays = (milliseconds) => {
-  return Math.round(milliseconds / 1000 / 60 / 60 / 24);
-};
 
 const nextBirth = (dateOfBirth) => {
   const currentDate = new Date();

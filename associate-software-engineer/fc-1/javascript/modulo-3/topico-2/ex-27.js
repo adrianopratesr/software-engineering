@@ -1,5 +1,5 @@
 import { students } from "./mock.js";
-import { isMonthTheSame } from "./utils.date.js";
+import { getMonthNumber, isMonthTheSame } from "./utils.date.js";
 
 
 const filterStudentsBornByMonth = (students, monthName) => {
@@ -10,22 +10,5 @@ const filterStudentsBornByMonth = (students, monthName) => {
 
 };
 
-function getMonthNumber(monthName) {
-  const monthNames = [
-    "Janeiro",
-    "Fevereiro",
-    "Março",
-    "Abril",
-    "Maio",
-    "Junho",
-    "Julho",
-    "Agosto",
-    "Setembro",
-    "Outubro",
-    "Novembro",
-    "Dezembro",
-  ];
-  return monthNames.indexOf(monthName) ;
-}
 
 console.log(filterStudentsBornByMonth(students, "Maio"));
