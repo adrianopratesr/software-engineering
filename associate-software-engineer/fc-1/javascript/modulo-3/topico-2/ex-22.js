@@ -1,3 +1,5 @@
+import { differenceDate } from "./utils.date";
+
 const consumption = {
   students: [
     { id: 1001, dataNascimento: "2005-03-02" },
@@ -71,13 +73,6 @@ const consumption = {
 };
 
 
-const differenceDate = (date) => {
-  const currentDate = new Date();
-  const millisecondsDifference = currentDate - Date.parse(date);
-  const ageInYears = millisecondsDifference / 1000 / 60 / 60 / 24 / 365;
-  return Math.round(ageInYears);
-};
-
 const rangeAgeStudents = (age) => {
   if (age < 0) {
     return "Não aceitamos idades negativas";
@@ -88,12 +83,12 @@ const rangeAgeStudents = (age) => {
     return "19-20";
   } else if(age > 20 && age <= 22){
     return "21-22";
-  }else {
+  } else {
     return "+22"
   }
 };
 
-const filterConsumption = (studentId, purchases) =>{
+const filterPurchasesByStudent = (studentId, purchases) =>{
   return purchases.filter((purchase) => purchase.idEstudante === studentId);
 };
 
@@ -102,9 +97,9 @@ const groupByStudents = (students, purchases) => {
   let group = {"0-18": [], "19-20": [], "21-22": [], "+22": []};
   students.forEach((student) => {
     const age = differenceDate(student.dataNascimento);
-    const correlacionando = filterConsumption(student.id, purchases);
+    const correlating = filterPurchasesByStudent(student.id, purchases);
     const range = rangeAgeStudents(age);
-    group[range].push(...correlacionando);
+    group[range].push(...correlating);
   })
     return group;
 };
