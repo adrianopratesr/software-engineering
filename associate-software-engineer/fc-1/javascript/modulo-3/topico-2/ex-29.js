@@ -3,12 +3,8 @@ import { students } from "./mock.js";
 const differencesBetweenAges = (student1, student2) => {
   const dateOfBirthStudent1 = new Date(student1.dateOfBirth);
   const dateOfBirthStudent2 = new Date(student2.dateOfBirth);
-  if (student1.age > student2.age) {
-    const diference = dateOfBirthStudent2 - dateOfBirthStudent1;
-    return printMessage(student1, student2, diference);
-  }
-  const diference2 = dateOfBirthStudent1 - dateOfBirthStudent2;
-  return printMessage(student1, student2, diference2);
+  const diference = Math.abs(dateOfBirthStudent1 - dateOfBirthStudent2);
+  return  printMessage(student1, student2, diference)
 };
 
 const printMessage = (student1, student2, diference) => {

@@ -1,9 +1,5 @@
 import { students } from "./mock.js";
-
-const isMonthTheSame = (date, monthNumber) => {
-
-  return new Date(date).getMonth() === monthNumber;
-  };
+import { isMonthTheSame } from "./utils.date.js";
 
 
 const filterStudentsBornByMonth = (students, monthName) => {
