@@ -1,4 +1,4 @@
-import { differenceDate } from "./utils.date";
+import { differenceDate } from "./utils.date.js";
 
 const consumption = {
   students: [
@@ -89,7 +89,12 @@ const rangeAgeStudents = (age) => {
 };
 
 const filterPurchasesByStudent = (studentId, purchases) =>{
-  return purchases.filter((purchase) => purchase.idEstudante === studentId);
+  return purchases
+  .filter((purchase) => purchase.idEstudante === studentId)
+  .map((purchase) => {
+    delete purchase.idEstudante;
+    return purchase;
+  });
 };
 
 
