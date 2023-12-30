@@ -1,13 +1,12 @@
-const doubleNumber = (number) => {
-    if (isNaN(number)) {
-        throw new Error("Insira um numero")
-    }else{
-        return number * 2;
-    }
-}
+const closeConnection = () => console.log("Fechadno conexão");
+const openConnection = () => console.log("Abrindo conexão");
 
-try{
-    console.log(doubleNumber("oi"))
-}catch(error){
-    console.error(error.message)
+try {
+    console.log("Executando operação crítica...");
+    throw new Error("Falha na operação!");
+} catch (error) {
+    console.error("Erro capturado: " + error.message);
+} finally {
+    closeConnection();
+    openConnection();
 }
