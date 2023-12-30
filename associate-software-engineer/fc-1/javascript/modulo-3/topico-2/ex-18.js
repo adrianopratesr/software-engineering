@@ -1,5 +1,5 @@
 import { students } from "./mock.js";
-import { getMonthNumber } from "./utils.date.js";
+import {  getMonthNumber } from "./utils.date.js";
 
 const birthdaysOfTheMonth = (students, bithdayMonth) => {
   const numberOfTheMonth = getMonthNumber(bithdayMonth);
@@ -8,11 +8,11 @@ const birthdaysOfTheMonth = (students, bithdayMonth) => {
   );
 };
 
-const checkMonthOfBirthday = (date, bithdayMonth) => {
+export const checkMonthOfBirthday = (date, bithdayMonth) => {
   const dateOfBirth = new Date(date);
   const month = dateOfBirth.getMonth();
   return month === bithdayMonth;
-};
+}; 
 
 
 console.log(birthdaysOfTheMonth(students, "Julho"));

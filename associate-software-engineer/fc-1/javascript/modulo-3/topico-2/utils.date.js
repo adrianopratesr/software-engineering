@@ -22,13 +22,12 @@ export function getMonthNumber(monthName) {
   }
 
 export const convertingMilliSecondInDays = (milliseconds) => {
-    return Math.round(milliseconds / 1000 / 60 / 60 / 24);
+    return Math.floor(milliseconds / 1000 / 60 / 60 / 24);
   };
 
 export const differenceDate = (date) => {
     const currentDate = new Date();
     const millisecondsDifference = currentDate - Date.parse(date);
-    const ageInYears = millisecondsDifference / 1000 / 60 / 60 / 24 / 365;
-    return Math.floor(ageInYears);
+    millisecondsDifference / 1000 / 60 / 60 / 24 / 365;
+    return Math.floor(millisecondsDifference / 1000 / 60 / 60 / 24 / 365);
   };
-  

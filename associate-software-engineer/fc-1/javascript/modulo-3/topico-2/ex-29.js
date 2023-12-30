@@ -4,8 +4,8 @@ import { convertingMilliSecondInDays } from "./utils.date.js";
 const differencesBetweenAges = (student1, student2) => {
   const dateOfBirthStudent1 = new Date(student1.dateOfBirth);
   const dateOfBirthStudent2 = new Date(student2.dateOfBirth);
-  const diference = Math.abs(dateOfBirthStudent1 - dateOfBirthStudent2);
-  return  printMessage(student1.name, student2.name, diference)
+  const difference = Math.abs(dateOfBirthStudent1 - dateOfBirthStudent2);
+  return  printMessage(student1.name, student2.name, difference)
 };
 
 const printMessage = (student1, student2, diference) => {

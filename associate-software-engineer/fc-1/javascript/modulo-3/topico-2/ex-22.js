@@ -73,7 +73,7 @@ const consumption = {
 };
 
 
-const rangeAgeStudents = (age) => {
+const getAgeRange = (age) => {
   if (age < 0) {
     return "Não aceitamos idades negativas";
   }
@@ -88,7 +88,7 @@ const rangeAgeStudents = (age) => {
   }
 };
 
-const filterPurchasesByStudent = (studentId, purchases) =>{
+const purchasesByStudent = (studentId, purchases) =>{
   return purchases
   .filter((purchase) => purchase.idEstudante === studentId)
   .map((purchase) => {
@@ -102,8 +102,8 @@ const groupByStudents = (students, purchases) => {
   let group = {"0-18": [], "19-20": [], "21-22": [], "+22": []};
   students.forEach((student) => {
     const age = differenceDate(student.dataNascimento);
-    const correlating = filterPurchasesByStudent(student.id, purchases);
-    const range = rangeAgeStudents(age);
+    const correlating = purchasesByStudent(student.id, purchases);
+    const range = getAgeRange(age);
     group[range].push(...correlating);
   })
     return group;
