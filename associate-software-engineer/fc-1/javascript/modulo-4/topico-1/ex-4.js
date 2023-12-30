@@ -1,5 +1,3 @@
-
-
 try{
     const fragrance = undefined;
     const fragranceCreator = fragrance.creator; 
