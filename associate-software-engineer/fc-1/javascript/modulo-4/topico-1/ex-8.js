@@ -1,5 +1,5 @@
 function getMonthNumber(monthName) {
-    if (!monthNames.includes(monthName)) {
+    if (!month || !monthNames.includes(monthName)) {
         throw new Error("Insira o nome de um mes valido");
     }
     const monthNames = [
@@ -16,7 +16,7 @@ function getMonthNumber(monthName) {
       "Novembro",
       "Dezembro",
     ];
-    return monthNames.indexOf(monthName) + 1;
+    return monthNames.indexOf(monthName);
   }
 
   try {
