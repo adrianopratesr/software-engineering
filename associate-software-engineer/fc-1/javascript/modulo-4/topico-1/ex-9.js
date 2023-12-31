@@ -9,7 +9,7 @@ const calculateArea = (base, height) => {
   };
 
   try {
-    calculateArea(4, "oi")
+    console,log(`A área do retâtangulo é ${calculateArea(4, "oi")}`);
   } catch (error) {
     console.error(error.message);
   };
