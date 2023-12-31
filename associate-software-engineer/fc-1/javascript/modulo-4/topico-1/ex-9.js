@@ -5,7 +5,7 @@ const calculateArea = (base, height) => {
     if (typeof base !== "number" || typeof height !== "number") {
         throw new Error("Entrada inválida, favor inserir apenas números entre vírgulas para base e altura");
     }
-    return `A área do retângulo é: ${base * height}`;
+    return base * height;
   };
 
   try {
