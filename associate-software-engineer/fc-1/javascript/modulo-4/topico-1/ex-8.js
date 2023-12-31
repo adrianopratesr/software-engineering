@@ -1,6 +1,6 @@
 function getMonthNumber(monthName) {
     if (!month || !monthNames.includes(monthName)) {
-        throw new Error("Insira o nome de um mes valido");
+        throw new Error("Insira o nome de um mês válido");
     }
     const monthNames = [
       "janeiro",

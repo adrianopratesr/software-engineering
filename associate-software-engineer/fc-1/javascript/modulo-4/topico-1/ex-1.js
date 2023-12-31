@@ -1,5 +1,5 @@
 try {
     console.lo("oi")
 } catch (error) {
-    console.error("deu ruim", error.message)
+    console.error("Deu ruim", error.message)
 }
