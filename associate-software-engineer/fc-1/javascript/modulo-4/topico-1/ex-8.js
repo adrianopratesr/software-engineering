@@ -3,20 +3,20 @@ function getMonthNumber(monthName) {
         throw new Error("Insira o nome de um mes valido");
     }
     const monthNames = [
-      "Janeiro",
-      "Fevereiro",
-      "Março",
-      "Abril",
-      "Maio",
-      "Junho",
-      "Julho",
-      "Agosto",
-      "Setembro",
-      "Outubro",
-      "Novembro",
-      "Dezembro",
+      "janeiro",
+      "fevereiro",
+      "março",
+      "abril",
+      "maio",
+      "junho",
+      "julho",
+      "agosto",
+      "setembro",
+      "outubro",
+      "novembro",
+      "dezembro",
     ];
-    return monthNames.indexOf(monthName);
+    return monthNames.indexOf(monthName.toLowerCase());
   }
 
   try {

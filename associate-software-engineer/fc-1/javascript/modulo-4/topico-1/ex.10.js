@@ -1,5 +1,5 @@
 const rangeAgeStudents = (age) => {
-    if (typeof age === "number") {
+    if (typeof age !== "number") {
         throw new Error("Favor inserir um numero");
      }
     if (age > 0 && age <= 18) {
