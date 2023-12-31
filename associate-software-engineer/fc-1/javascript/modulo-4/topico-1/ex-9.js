@@ -3,7 +3,7 @@ const calculateArea = (base, height) => {
       throw new Error("Entrada inválida, favor atribuir valores para base e altura");
     }
     if (typeof base !== "number" || typeof height !== "number") {
-        throw new Error ("Entrada inválida, favor inserir apenas números entre vírgulas para base a altura");
+        throw new Error("Entrada inválida, favor inserir apenas números entre vírgulas para base e altura");
     }
     return `A área do retângulo é: ${base * height}`;
   };
