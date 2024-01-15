@@ -1,5 +1,5 @@
 function randomNumber() {
-  let number = Math.random();
+  const number = Math.random();
 
   return new Promise((resolve, reject) => {
     if (number < 0.5) {
