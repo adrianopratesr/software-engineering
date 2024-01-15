@@ -1,3 +1,3 @@
 fetch("https://randomuser.me/api/")
-  .then((result) => result.json())
-  .then((reusltJson) => console.log(reusltJson));
+  .then((data) => data.json())
+  .then((dataJson) => console.log(dataJson));
