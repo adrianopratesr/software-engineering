@@ -16,5 +16,5 @@ function verifyResult(randomValue, number) {
 
 randomNumber()
   .then((number) => verifyResult(number, 2))
-  .then((reuslt) => console.log(reuslt))
+  .then((result) => console.log(result))
   .catch((err) => console.error(err));

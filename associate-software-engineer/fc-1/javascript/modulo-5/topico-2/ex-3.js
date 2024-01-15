@@ -5,7 +5,7 @@ function carTechnicalSheet() {
         resolve({
           branchName: "BMW",
           model: "M2",
-          hoursePower: 490,
+          horsePower: 490,
         }),
       2000
     );
