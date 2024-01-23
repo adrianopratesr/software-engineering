@@ -9,6 +9,15 @@ function randomNumber() {
   });
 }
 
+const main = async () => {
+  try {
+    const number = await randomNumber();
+    console.log(number);
+  } catch (err) {
+    console.err(err);
+  }
+};
+
 randomNumber()
   .then((message) => console.log(message))
   .catch((err) => console.error(err));
