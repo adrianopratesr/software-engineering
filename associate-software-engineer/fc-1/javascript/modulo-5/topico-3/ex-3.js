@@ -1,4 +1,4 @@
-function carTechnicalSheet() {
+const carTechnicalSheet = () => {
   return new Promise((resolve) => {
     setTimeout(
       () =>
@@ -10,7 +10,7 @@ function carTechnicalSheet() {
       2000
     );
   });
-}
+};
 
 const carSpec = (carModel) => {
   return new Promise((resolve) => {
@@ -18,7 +18,14 @@ const carSpec = (carModel) => {
   });
 };
 
-carTechnicalSheet()
-  .then((carModel) => carSpec(carModel.model))
-  .then((technicalInformation) => console.log(technicalInformation))
-  .catch((err) => console.err(err));
+const main = async () => {
+  try {
+    const carModel = await carSpec();
+    const technicalInformation = await carTechnicalSheet(carModel);
+    console.log(technicalInformation);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+main();
