@@ -17,7 +17,9 @@ function mutiplySum(sumNumber, number) {
   });
 }
 
-randomNumber()
-  .then((number) => sumNumber(number))
-  .then((sumNumber) => mutiplySum(sumNumber, 3))
-  .then((mutiplyNumber) => console.log(mutiplyNumber));
+const main = async () => {
+  const randomNumber = await randomNumber();
+  const sumNumber = await sumNumber(randomNumber);
+  const mutiplyNumber = await mutiplySum(sumNumber);
+  console.log(mutiplyNumber);
+};
