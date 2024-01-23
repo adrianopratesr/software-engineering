@@ -14,10 +14,8 @@ const main = async () => {
     const number = await randomNumber();
     console.log(number);
   } catch (err) {
-    console.err(err);
+    console.error(err);
   }
 };
 
-randomNumber()
-  .then((message) => console.log(message))
-  .catch((err) => console.error(err));
+main();
