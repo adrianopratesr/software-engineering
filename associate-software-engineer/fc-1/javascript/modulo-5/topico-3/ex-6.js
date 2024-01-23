@@ -1,4 +1,11 @@
-fetch("https://randomuser.me/api/=5")
-  .then((data) => data.json())
-  .then((dataJson) => console.log(dataJson))
-  .catch((err) => console.error("A busca falhou: " + err));
+const main = async () => {
+  try {
+    const findData = await fetch("https://randomuser.me/api/");
+    const tranformInJson = await findData.json();
+    console.log(tranformInJson);
+  } catch (err) {
+    console.error("A busca falhou: " + err);
+  }
+};
+
+main();
