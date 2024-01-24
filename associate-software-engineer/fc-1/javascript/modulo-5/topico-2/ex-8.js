@@ -17,7 +17,7 @@ function mutiplySum() {
   });
 }
 
-Promise.all([randomNumber(), sumNumber(), mutiplySum()]).then((results) => {
+Promise.all([randomNumber(), sumNumber(), multiplyNumber()]).then((results) => {
   const [result1, result2, result3] = results;
   console.log(result1, result2, result3);
 });
