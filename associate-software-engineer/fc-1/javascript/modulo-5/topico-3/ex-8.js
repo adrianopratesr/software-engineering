@@ -1,4 +1,4 @@
-const divisaoNumero = () => {
+const divisionNumber = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(10 / 5);
@@ -6,7 +6,7 @@ const divisaoNumero = () => {
   });
 };
 
-const somarNumeros = () => {
+const sumNumber = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(2 + 5);
@@ -14,7 +14,7 @@ const somarNumeros = () => {
   });
 };
 
-const multiplicarSoma = () => {
+const multiplyNumber = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(2 * 2);
@@ -22,10 +22,13 @@ const multiplicarSoma = () => {
   });
 };
 
-const principal = async () => {
-  const [resultadoDivisao, resultadoSoma, resultadoMultiplicacao] =
-    await Promise.all([divisaoNumero(), somarNumeros(), multiplicarSoma()]);
-  console.log(resultadoDivisao, resultadoSoma, resultadoMultiplicacao);
+const main = async () => {
+  const [resultDivision, resultSum, resultMultiply] = await Promise.all([
+    divisionNumber(),
+    sumNumber(),
+    multiplyNumber(),
+  ]);
+  console.log(resultDivision, resultSum, resultMultiply);
 };
 
-principal();
+main();
