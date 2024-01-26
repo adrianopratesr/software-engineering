@@ -16,6 +16,12 @@ function promiseTimeOut() {
   });
 }
 
-promiseTimeOut()
-  .then((resolve) => console.log(resolve))
-  .catch((err) => console.error(err));
+const main = async () => {
+  try {
+    const timeOut = await promiseTimeOut();
+    console.log(timeOut);
+  } catch (err) {
+    console.error(err);
+  }
+};
+main();
