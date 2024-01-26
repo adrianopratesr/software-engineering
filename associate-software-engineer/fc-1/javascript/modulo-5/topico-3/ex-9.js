@@ -7,12 +7,16 @@ function promiseTimeOut() {
       () => reject("A promisse não foi resolvida antes de 3 segundos"),
       3000
     );
-    resolveThreeSeconds
-      .then((message) => {
+    const mainPromisse = async () => {
+      try {
+        const message = await resolveThreeSeconds;
         clearTimeout(timeOutMoreThreeSeconds);
         resolve(message);
-      })
-      .catch((err) => console.error(err));
+      } catch (err) {
+        (err) => console.error(err);
+      }
+    };
+    mainPromisse();
   });
 }
 

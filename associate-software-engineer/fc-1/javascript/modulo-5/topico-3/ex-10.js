@@ -14,7 +14,14 @@ function verifyResult(randomValue, number) {
   });
 }
 
-randomNumber()
-  .then((number) => verifyResult(number, 2))
-  .then((result) => console.log(result))
-  .catch((err) => console.error(err));
+const main = async () => {
+  try {
+    const number = await randomNumber();
+    const verify = await verifyResult(number, 2);
+    console.log(verify);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+main();
