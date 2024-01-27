@@ -11,8 +11,6 @@ const dateUpdate = {
   age: 100
 };
 
-console.log(JSON.stringify(dateUpdate))
-
 const updateClient = async (url, data) => {
   try {
     const create = await fetch(url, {
