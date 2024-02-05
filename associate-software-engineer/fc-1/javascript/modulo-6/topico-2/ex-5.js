@@ -1,7 +1,7 @@
 const API_KEY = "85ff2a3867ea51b2485de91ffd9917b2";
 const city = "São José dos Campos";
 
-const makeOpenWeatherUrl = (city) => {
+const makeOpenWeatherUrl = (city, API_KEY) => {
   return `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 };
 

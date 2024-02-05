@@ -1,10 +1,10 @@
-import { httpResponse } from "./utills.https";
+import { makeHttpRequest, makeHttpResponse } from "./utils.http";
 
-const url = "http://localhost:3000/client";
+const CLIENT_URL = "http://localhost:3000/client";
 
 const findClient = async (url) => {
   try {
-    const findClientResponse = httpResponse(url, "GET");
+    const findClientResponse = await fetch(url, makeHttpRequest("GET"));
     const response = await findClientResponse.json();
     console.log(response);
   } catch (error) {
@@ -12,4 +12,4 @@ const findClient = async (url) => {
   }
 };
 
-findClient(url);
+findClient(CLIENT_URL);

@@ -1,4 +1,5 @@
-import { httpResponseJsonData } from "./utills.https";
+import { makeHttpRequest } from "./utils.http";
+import { httpResponseJsonData } from "./utils.https";
 
 const url = "http://localhost:3000/client/9c0118ce-0da6-4c6f-b01f-290a02d2d287";
 
@@ -13,9 +14,12 @@ const dateUpdate = {
   age: 100,
 };
 
-const updateClient = async (url, data) => {
+const updateClient = async (url, bodyData) => {
   try {
-    const clientUpdateResponse = httpResponseJsonData(url, "PATCH", data);
+    const clientUpdateResponse = await fetch(
+      url,
+      makeHttpRequest("PATCH", bodyData)
+    );
     const response = await clientUpdateResponse.text();
     console.log(response);
   } catch (error) {
