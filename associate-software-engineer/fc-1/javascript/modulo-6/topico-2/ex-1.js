@@ -1,4 +1,4 @@
-import { httpResponseJsonData } from "./utills.https";
+import { makeHttpRequest, makeHttpResponseJsonData } from "./utils.http";
 
 const data = {
   postalCode: "12246021",
@@ -11,11 +11,14 @@ const data = {
   age: 27,
 };
 
-const url = "http://localhost:3000/client";
+const CLIENT_URL = "http://localhost:3000/client";
 
-const newClientResponse = async (url, data) => {
+const newClientResponse = async (url, bodyData) => {
   try {
-    const createClientResponse = httpResponseJsonData(url, "POST", data);
+    const createClientResponse = await fetch(
+      url,
+      makeHttpRequest("POST", bodyData)
+    );
     const response = await createClientResponse.json();
     console.log(response);
   } catch (error) {
@@ -23,4 +26,4 @@ const newClientResponse = async (url, data) => {
   }
 };
 
-newClientResponse(url, data);
+newClientResponse(CLIENT_URL, data);
