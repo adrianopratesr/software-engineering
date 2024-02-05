@@ -1,4 +1,4 @@
-const userName = "adrianopratesr";
+const userName = "luanarahal";
 
 const makeApiGithubrUrl = (userName) => {
   return `https://api.github.com/users/${userName}/repos`;
@@ -10,8 +10,7 @@ const main = async () => {
   try {
     const getDataUserGithub = await fetch(URL_OPEN_API_GITHUB);
     const response = await getDataUserGithub.json();
-    const displayRepos = response.forEach((repo) => console.log(repo.name));
-    console.log(displayRepos);
+    response.forEach((repo) => console.log(repo.name));
   } catch (err) {
     console.error("Error:", err);
   }
