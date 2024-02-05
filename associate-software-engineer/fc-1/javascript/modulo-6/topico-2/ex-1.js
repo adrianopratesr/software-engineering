@@ -1,3 +1,5 @@
+import { httpResponseJsonData } from "./utills.https";
+
 const data = {
   postalCode: "12246021",
   street: "Benedito osvaldo lecques",
@@ -11,20 +13,14 @@ const data = {
 
 const url = "http://localhost:3000/client";
 
-const createClient = async (url, data) => {
+const newClientResponse = async (url, data) => {
   try {
-    const create = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-    const response = await create.json();
+    const createClientResponse = httpResponseJsonData(url, "POST", data);
+    const response = await createClientResponse.json();
     console.log(response);
   } catch (error) {
     console.error(error);
   }
 };
 
-createClient(url, data);
+newClientResponse(url, data);
