@@ -1,36 +1,34 @@
 const title = document.getElementById("tituloPrincipal");
 title.textContent = "Aooba";
 
-const paragraph = document.getElementsByTagName("p");
-for (const p of paragraph) {
+const paragraphs = document.getElementsByTagName("p");
+for (const p of paragraphs) {
   p.style.color = "#3346FF";
 }
 
-const alterClass = document.getElementsByClassName("destaque");
-for (const alterBackground of alterClass) {
-  alterBackground.style.backgroundColor = "#ffff00";
+const highlightedElements = document.getElementsByClassName("destaque");
+for (const highlightedElement of highlightedElements) {
+  highlightedElement.style.backgroundColor = "#ffff00";
+}
+for (const highlightedElement of highlightedElements) {
+  highlightedElement.textContent = "Texto alterado";
 }
 
-const elementClass = document.querySelector(".item");
-elementClass.textContent = "Item Alterado";
+const itemsElements = document.querySelector(".item");
+itemsElements.textContent = "Item Alterado";
 
 const links = document.querySelectorAll("a.link");
 for (const link of links) {
   link.setAttribute("target", "_blank");
 }
 
-const buttonText = document.getElementById("botaoClique");
-buttonText.textContent = "Não clique";
+const clickButtonElement = document.getElementById("botaoClique");
+clickButtonElement.textContent = "Não clique";
 
-const alterColorList = document.querySelectorAll("li.item");
-for (const colorLi of alterColorList) {
+const listItemElements = document.querySelectorAll("li.item");
+for (const colorLi of listItemElements) {
   colorLi.style.backgroundColor = "#00ff00";
 }
 
-const alterClassContent = document.getElementsByClassName("destaque");
-for (const alterContent of alterClassContent) {
-  alterContent.textContent = "Texto alterado";
-}
-
-const alterFontText = document.getElementsByTagName("span")[0];
-alterFontText.style.fontStyle = "italic";
+const firstSpanElement = document.getElementsByTagName("span")[0];
+firstSpanElement.style.fontStyle = "italic";
